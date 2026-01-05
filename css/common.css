@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* task-1 */
+
+#categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+}
+
+#categories > .item {
+  background-color: #f0f1f5;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+#categories > .item > h2 {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2f42;
+}
+
+#categories > .item > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categories > .item > ul > li {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+/* task-2 */
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery li {
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* task-3 */
+
+#name-input {
+  width: 100%;
+  max-width: 360px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#name-input:focus {
+  border-color: #999;
+}
+
+#name-input::placeholder {
+  color: #212121;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+#name-output {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+line-height: 133%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+
+/* taask-4 */
+
+.login-form {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #4e75ff;
+}
+
+.login-form button {
+  width: fit-content;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+.login-form button:active {
+  background-color: #3d5cd6;
+}
+
+
+/* task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px;
+}
+
+.widget p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2f42;
+  margin: 0;
+}
+
+.widget .color {
+  font-weight: 600;
+}
+
+.widget .change-color {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget .change-color:hover {
+  background-color: #6c8cff;
+}
+
+.widget .change-color:active {
+  background-color: #3d5cd6;
+}
